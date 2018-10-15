@@ -103,8 +103,19 @@ void DeleteByPos(LinkNode* list, int position)
 	}
 	if (position >= Length(list) || position < 0)
 	{
-		cout << "链表长度 == " << Length(List) << "   删除元素的位置 == " << position << "   不能插入";
+		cout << "链表长度 == " << Length(List) << "   删除元素的位置 == " << position << "   没有该位置节点";
 		return;
 	}
-
+	LinkNode* p = list;
+	int pos = -1;
+	while (p->next != nullptr && (pos++) < position)
+	{
+		p = p->next;
+	}
+	if (p->next != nullptr && pos == position)
+	{
+		LinkNode* q = p->next;
+		p->next = p->next->next;
+		free(q);
+	}
 }
