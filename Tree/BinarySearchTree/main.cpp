@@ -42,6 +42,11 @@ void main()
 	tree_1 = Insert(tree_1, 126);
 	tree_1 = Insert(tree_1, 174);
 	tree_1 = Insert(tree_1, 176);
+
+	tree_1 = Delete(tree_1, 24);
+	tree_1 = Delete(tree_1, 150);
+	tree_1 = Delete(tree_1, 100);
+
 	Preorder(tree_1);
 	cout << "=============" << endl;
 	Inorder(tree_1);
