@@ -10,4 +10,5 @@ typedef struct _graph
 }Graph, *PtrGraph;
 
 PtrGraph create_graph(const char* path);
+void destroy_graph(PtrGraph* p_graph);
 
