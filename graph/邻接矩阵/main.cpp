@@ -7,4 +7,7 @@
 void main()
 {
 	PtrGraph p_graph = create_graph("C:/Users/lzx14/Desktop/Project2/Debug/a.txt");
+	destroy_graph(p_graph);
+
+	getchar();
 }

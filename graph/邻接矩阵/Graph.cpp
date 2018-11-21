@@ -69,3 +69,10 @@ PtrGraph create_graph(const char* path)
 
 	return p_graph;
 }
+
+
+void destroy_graph(PtrGraph p_graph)
+{
+	if(p_graph)
+		free(p_graph);
+}
